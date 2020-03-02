@@ -25,7 +25,7 @@ SECRET_KEY = '@ni$j-wg_3evs2n+-@xos5tdaubd9uwa8b6i**o6#0=vqvesh('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
