@@ -1,0 +1,24 @@
+<style>
+  strong{
+      color:white;
+  }
+   .alert{
+     color:white;
+   }   
+  </style>
+{% if messages %}
+  {% for message in messages %}
+    <div id="message">
+      <div class="alert alert-{{ message.tags }} alert-dismissible text-center" role="alert">
+        <strong>
+          {% if message.level == DEFAULT_MESAGE_LEVELS.ERROR %}
+            ERROR
+          {% else %}
+            {{message.tags |title }}
+           {% endif %}   
+        </strong> 
+        {{message}}
+      </div>
+    </div>
+  {% endfor %}
+{% endif %} 
